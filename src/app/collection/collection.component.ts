@@ -6,7 +6,6 @@ import { DataService } from '../services/data.service';
 import { Subject } from 'rxjs/Subject';
 
 @Component({
-  selector: 'my-collection',
   templateUrl: './collection.component.html',
   styleUrls: ['./collection.component.css']
 })
@@ -28,7 +27,7 @@ export class CollectionComponent implements OnInit {
   }
 
   ngOnInit() {
-    //this.getBooks();
+    this.getBooks();
     this._dataService.search(this.searchTerm$).subscribe(books => { this.books = books; });
   }
 
