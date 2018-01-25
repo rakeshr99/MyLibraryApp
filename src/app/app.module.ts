@@ -12,16 +12,16 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { CollectionComponent } from './collection/collection.component';
-import { RatingCategoryPipe } from './pipes/rating-category.pipe';
-import { RatingComponent } from './rating/rating.component';
+//import { RatingCategoryPipe } from './pipes/rating-category.pipe';
+//import { RatingComponent } from './rating/rating.component';
 import { HttpModule } from '@angular/http';
 import { TabsComponent } from './tabs/tabs.component';
 import { RouterModule} from '@angular/router';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { BookDetailComponent } from './book-detail/book-detail.component';
-import { BookGuardService } from './guards/book-guard.service';
+//import { BookDetailComponent } from './book-detail/book-detail.component';
+//import { BookGuardService } from './guards/book-guard.service';
 import { DataService } from './services/data.service';
-import { NewBookComponent } from './new-book/new-book.component';
+//import { NewBookComponent } from './new-book/new-book.component';
 
 
 
@@ -29,12 +29,12 @@ import { NewBookComponent } from './new-book/new-book.component';
   declarations: [
     AppComponent,
     AboutComponent,
-    CollectionComponent,
-    RatingCategoryPipe,
-    RatingComponent,
+    //CollectionComponent,
+    //RatingCategoryPipe,
+    //RatingComponent,
     TabsComponent,
-    BookDetailComponent,
-    NewBookComponent
+    //BookDetailComponent,
+    //NewBookComponent
   ],
   imports: [
     BrowserModule,
@@ -56,10 +56,11 @@ import { NewBookComponent } from './new-book/new-book.component';
     AppRoutingModule
    
   ],
-  providers: [BookGuardService, DataService],
-  bootstrap: [AppComponent]
-  entryComponents: [
-    NewBookComponent
-  ]
+  //providers: [BookGuardService, DataService],
+  //providers: [DataService],
+  bootstrap: [AppComponent],
+  //entryComponents: [
+    //NewBookComponent
+  //]
 })
 export class AppModule { }

@@ -13,12 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'collection',
-    component: CollectionComponent
-  },
-  {
-    path: 'collection/:id',
-    canActivate: [BookGuardService],
-    component: BookDetailComponent
+    loadChildren: 'app/collection/collection.module#CollectionModule'
   },
   {
     path: '',
