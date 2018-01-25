@@ -19,6 +19,8 @@ import { TabsComponent } from './tabs/tabs.component';
 import { RouterModule} from '@angular/router';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BookDetailComponent } from './book-detail/book-detail.component';
+import { BookGuardService } from './guards/book-guard.service';
+import { DataService } from './services/data.service';
 
 
 @NgModule({
@@ -51,7 +53,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     AppRoutingModule
    
   ],
-  providers: [],
+  providers: [BookGuardService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
