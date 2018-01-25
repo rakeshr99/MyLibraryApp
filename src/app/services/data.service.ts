@@ -79,4 +79,9 @@ export class DataService {
       })
       .catch(this.handleError);
   }
+
+  addBook(book: Ibook): Observable<void> {
+    return this._http.post(this._booksUrl + "/addbook", book)
+      .catch(this.handleError);
+  }
 }
